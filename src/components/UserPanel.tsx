@@ -13,13 +13,13 @@ const UserPanel = ({ ...props }: UserPanelProps) => {
 
   return (
     <div className="p-3 text-center" {...props}>
-      {user?.images.length && (
+      {user?.images.length ? (
         <img
           alt={user?.display_name}
           src={user?.images[0].url}
           className="rounded-circle w-75 d-none d-sm-inline-block"
         />
-      )}
+      ) : undefined}
 
       <div className="d-flex d-sm-block">
         <h3 className="text-lowercase">
