@@ -25,7 +25,10 @@ const ShowPlaylist = ({ playlistId, ...props }: ShowPlaylistProps) => {
           {playlist.songs?.length ? (
             <ul className="list-group">
               {playlist.songs?.map(track => (
-                <li className="list-group-item d-flex align-items-center">
+                <li
+                  key={track.id}
+                  className="list-group-item d-flex align-items-center"
+                >
                   <img
                     src={track.album.images[0].url}
                     alt={track.album.name}

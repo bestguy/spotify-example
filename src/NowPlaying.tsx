@@ -1,5 +1,4 @@
 import React, { HTMLProps } from 'react';
-import AddToPlaylist from './components/AddToPlaylist';
 import ShowTrack from './components/ShowTrack';
 import useCurrentlyPlaying from './hooks/useCurrentlyPlaying';
 
