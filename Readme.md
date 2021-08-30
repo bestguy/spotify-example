@@ -1,6 +1,8 @@
 # Spotify Playlist App
 ## Using TypeScript, React, & React Hooks
 
+<img width="798" alt="Screen Shot" src="https://user-images.githubusercontent.com/405608/131288534-4017e4f6-3e57-4baf-8875-0f85f72bdbad.png">
+
 **TODOs**
 
 - [ ] Playlist storage uses localstorage and serializes the entire object returned from Spotify APIs to JSON.  Need to trim to only fields used in app.
