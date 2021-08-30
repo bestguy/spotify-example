@@ -1,0 +1,1 @@
+#content{display:grid;grid-template-columns:15rem 1fr;height:100%}@media (max-width: 575px){#content{grid-template-columns:1fr}}h1,h2,h3,h4,h5,h6{font-family:Orbitron}body,#main,#root{height:100vh}
