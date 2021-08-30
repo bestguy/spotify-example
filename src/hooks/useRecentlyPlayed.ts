@@ -10,7 +10,7 @@ function useRecentlyPlayed(): RecentlyPlayed | undefined {
   const auth = useContext(AuthContext);
   const user = useFetch<RecentlyPlayed>('https://api.spotify.com/v1/me/player/recently-played', {
     headers: {
-      'Authorization': `Bearer ${auth.access_token}`
+      'Authorization': `Bearer ${auth?.access_token}`
     }
   });
 

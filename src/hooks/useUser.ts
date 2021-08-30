@@ -10,7 +10,7 @@ function useUser(): User | undefined {
   const auth = useContext(AuthContext);
   const user = useFetch<User>('https://api.spotify.com/v1/me', {
     headers: {
-      'Authorization': `Bearer ${auth.access_token}`
+      'Authorization': `Bearer ${auth?.access_token}`
     }
   });
 

@@ -10,7 +10,7 @@ function useCurrentlyPlaying(): CurrentlyPlaying | undefined {
   const auth = useContext(AuthContext);
   const user = useFetch<CurrentlyPlaying>('https://api.spotify.com/v1/me/player/currently-playing', {
     headers: {
-      'Authorization': `Bearer ${auth.access_token}`
+      'Authorization': `Bearer ${auth?.access_token}`
     }
   }, 5000);
 
