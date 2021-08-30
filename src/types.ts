@@ -1,5 +1,9 @@
 // Shared TypeScript types.
 
+export interface Auth {
+  [key: string]: string; 
+}
+
 export interface Playlist {
   id: string;
   name: string;

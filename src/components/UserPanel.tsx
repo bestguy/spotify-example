@@ -25,10 +25,6 @@ const UserPanel = ({ ...props }: UserPanelProps) => {
         <h3 className="text-lowercase">
           {user?.display_name}
         </h3>
-
-        <a className="btn btn-link btn-sm ms-auto" href="#">
-          Logout
-        </a>
       </div>
     </div>
   );

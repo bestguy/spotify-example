@@ -15,7 +15,11 @@ function useHash() {
     return () => window.removeEventListener('hashchange', onHashChange)
   });
 
-  return hash;
+  const updateHash = useCallback((newHash: string = '') => {
+    if (newHash !== hash) window.location.hash = newHash;
+  }, [hash]);
+
+  return [hash, updateHash] as const;
 };
 
 export default useHash;
