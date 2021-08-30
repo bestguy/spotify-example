@@ -9,7 +9,7 @@ interface LoginProps extends HTMLProps<HTMLDivElement> { }
 const Login = ({ ...props }: LoginProps) => {
   const loginUrl = useMemo(() => {
     const client_id = '5ba66b08dd254565878aaf78087334cc';
-    const redirect_uri = 'https://bestguy.github.io/spotify-example/';
+    const redirect_uri = 'http://localhost:8080/';
     const scope = 'user-read-private user-read-currently-playing';
 
     return 'https://accounts.spotify.com/authorize?response_type=token' +
